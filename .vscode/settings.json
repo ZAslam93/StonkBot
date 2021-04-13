@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/c33b3db6-81ab-4660-bfbd-761417e02def/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/stonkBot",
+    "appService.deploySubpath": "."
+}

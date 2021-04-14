@@ -40,7 +40,7 @@ client.on("message", msg => {
     fetch(`https://cloud.iexapis.com/stable/stock/${quote}/quote?token=${process.env.API}`)
       .then(errorHandle)
       .then(data => {
-        msg.reply(`${data["symbol"]} | ${data["companyName"]} | $${data["latestPrice"].toFixed(2)}`)
+        msg.reply(`${data["symbol"]} | ${data["companyName"]} | $${data["latestPrice"].toFixed(2)} ▲`)
       })
       .catch(error => console.log(`${error} provided`));
   }

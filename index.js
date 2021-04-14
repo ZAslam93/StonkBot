@@ -53,6 +53,13 @@ client.on("message", msg => {
       .then(console.log("TO THE MOON"))
       .catch(console.error);
   }
+
+  // Delete bot messages after 10 seconds
+  else if (msg.author["username"] == "StonkBot") {
+    msg.delete( {timeout: 10000} )
+      .then(msg => console.log("Message cleared"))
+      .catch(console.error);
+  }
 });
 
 // Bot login

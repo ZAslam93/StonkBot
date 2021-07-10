@@ -50,7 +50,7 @@ client.on("message", msg => {
   else if (stonkRegex.test(msg.content)) {
     console.log(msg.content)
     msg.react('🚀')
-      .then(console.log("TO THE MOON"))
+      .then(console.log("TO THE MOON!"))
       .catch(console.error);
   }
 
